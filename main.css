@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+
+html {
+    background-color: #000;
+}
+
+body {
+    display: grid;
+    font-family: 'Sacramento', cursive;
+}
+
+/* Nav */
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+
+}
+
+h2 {
+    font-size: 4rem;
+    color: #F250FB;
+}
+
+h3 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.browser-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--menu);
+    width: 100%;
+}
+
+
+.browser-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+}
+
+.browser-links a {
+    color: #F250FB;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 19px;
+}
+
+.browser-links a:hover {
+    color: var(--color);
+}
+
+.browser-links li {
+    padding-right: 5%;
+}
+
+.nav-links {
+    display: none;
+
+}
+
+
+/* Hero img  */
+.hero {
+    height: 70vh;
+    display: grid;
+    background-color: #161425;
+    margin-bottom: 50px;
+
+}
+
+.hero-img {
+    background-image: url(Images/Optim/NEON-SIGN-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+.main-container {
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 100vw;
+    grid-gap: 15px;
+    margin: 0 5%;
+    grid-template-rows: repeat(7, 400px);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "burger"
+        "hotdogs"
+        "sides"
+        "desserts"
+        "beer"
+        "wines"
+        "cocktails";
+}
+
+.border {
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+
+}
+
+.burger {
+    grid-area: burger;
+    overflow: hidden;
+    background-image: url(Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg);
+    background-position: center;
+    height: 100%;
+}
+
+.hotdogs {
+    grid-area: hotdogs;
+    background-image: url(Images/Optim/H-call-me-hangry-HP9vpVGq-WA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sides {
+    grid-area: sides;
+    background-image: url(Images/Optim/S-ismael-trevino-Y0zbn9lPCEU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.desserts {
+    grid-area: desserts;
+    background-image: url(Images/Optim/D-marc-markstein-nsFpg75ENAA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.beers {
+    grid-area: beer;
+    background-image: url(Images/Optim/B-andrew-cleaton-qxFsVuBCDT0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wines {
+    grid-area: wines;
+    background-image: url(Images/Optim/W-800-terry-vlisidis-0dhIwRsPV74-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cocktails {
+    grid-area: cocktails;
+    overflow: hidden;
+    background-image: url(Images/Optim/C-ralph-darabos-swkwxyaBFto-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 691px) {
+    .browser-links {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.5s ease-in;
+        margin: 0;
+
+
+
+    }
+
+    .nav-links a {
+        color: #F250FB;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 22px;
+        transition: color 0.2s, font-size 0.2s;
+    }
+
+    .nav-links a:hover {
+        color: #F250FB;
+        font-size: 25px;
+    }
+
+
+    .burger-icon {
+        display: none;
+    }
+
+    .burger-icon div {
+        width: 25px;
+        height: 2px;
+        background-color: #F250FB;
+        margin: 5px;
+        transition: all 0.35s ease;
+    }
+
+    .nav-links {
+
+        transform: translateX(100%);
+    }
+
+
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-links ul {
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(6) {
+        padding-bottom: 30%;
+    }
+
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: 40px
+    }
+}
+
+
+@media only screen and (min-width: 690px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 400px);
+        grid-template-areas:
+            "burger burger"
+            "hotdogs sides"
+            "desserts desserts"
+            "beer wines"
+            "cocktails cocktails";
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 280px);
+        grid-template-areas:
+            "burger burger hotdogs hotdogs"
+            "burger burger sides desserts"
+            "beer wines cocktails cocktails";
+    }
+
+}
+
+.offer {
+    height: 550px;
+    background-image: url(Images/Optim/walter-lee-olivares-de-la-cruz-cUFli52JBoo-unsplash.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    ;
+}
+
+.pancakes {
+    height: 600px;
+    background-image: url(Images/Optim/prateek-katyal-LtX2CBAJd20-unsplash.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;
+
+}
+
+.footer {
+    height: 400px;
+}
