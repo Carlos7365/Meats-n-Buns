@@ -18,7 +18,7 @@
 
                 <ul class="browser-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Burgers</a></li>
+                    <li><a href="menu.html">Burgers</a></li>
                     <li><a href="#portfolio">Hotdogs</a></li>
                     <li><a href="#contact">Sides</a></li>
                     <li><a href="#contact">Dessert</a></li>
@@ -28,7 +28,7 @@
 
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Burgers</a></li>
+                    <li><a href="menu.html">Burgers</a></li>
                     <li><a href="#portfolio">Hotdogs</a></li>
                     <li><a href="#contact">Sides</a></li>
                     <li><a href="#contact">Desserts</a></li>
@@ -46,28 +46,43 @@
         <section class="hero">
             <div class="hero-img"></div>
         </section>
+
         <div class="grid-container">
-            <div class="burger border">
-                <h2>Burgers</h2>
-            </div>
-            <div class="hotdogs border">
-                <h2>Hotdogs</h2>
-            </div>
-            <div class="sides border">
-                <h2>Sides</h2>
-            </div>
-            <div class="desserts border">
-                <h2>Desserts</h2>
-            </div>
-            <div class="beers border">
-                <h2>Beers</h2>
-            </div>
-            <div class="wines border">
-                <h2>Wines</h2>
-            </div>
-            <div class="cocktails border">
-                <h2>Cocktails</h2>
-            </div>
+            <a href="menu.html" class="parent burger">
+                <div class=" border child burger-img">
+                    <h2>Burgers</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent hotdogs">
+                <div class=" border child hotdogs-img">
+                    <h2>Hotdogs</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent sides">
+                <div class="sides-img border child">
+                    <h2>Sides</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent desserts">
+                <div class="desserts-img child border">
+                    <h2>Desserts</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent beers">
+                <div class="child border beers-img">
+                    <h2>Beers</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent wines">
+                <div class="wines-img child border">
+                    <h2>Wines</h2>
+                </div>
+            </a>
+            <a href="menu.html" class="parent cocktails">
+                <div class="cocktails-img child border">
+                    <h2>Cocktails</h2>
+                </div>
+            </a>
         </div>
 
         <section class="pancakes border" id="cocktail-image">
@@ -76,14 +91,22 @@
         </section>
 
         <section class="offer">
+            <div class="box">
+                <h4>Join our mailing list for a 2-4-1 ALL NIGHT cocktails voucher</h4>
+
+                <form action=" POST" data-netlify="true" class="contact-form">
+                    <input type="text" id="email" name="email" placeholder="Email" required class="form-inputs">
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+
+            </div>
 
         </section>
 
-
-        <section class="footer">
-
-        </section>
     </div>
+    <footer>
+        <p>Designed by Carlos Sanchez</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 
