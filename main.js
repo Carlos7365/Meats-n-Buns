@@ -12,7 +12,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = ''
             } else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.15}s`
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 11 + 0.50}s`
             }
         })
         //burger animation
@@ -43,8 +43,8 @@ const parallax = document.getElementById
 
 window.addEventListener("scroll", function ()
 {
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * .1 + "px";
+    let offset = window.pageYOffset - 1400;
+    parallax.style.backgroundPositionY = offset * .2 + "px";
     // console.log('Offset: ' + offset);
     // console.log("offset * 0.7" + offset)
 })
