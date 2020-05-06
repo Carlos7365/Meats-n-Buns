@@ -264,6 +264,10 @@ h3 {
 
 }
 
+.pancakes {
+    display: none;
+}
+
 
 
 
@@ -431,18 +435,9 @@ h3 {
 
 }
 
-.pancakes {
-    height: 600px;
-    background-image: url(Images/Optim/sh-prateek-katyal-LtX2CBAJd20-unsplash.jpg);
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    justify-content: center;
-    background-attachment: fixed;
-    align-items: center;
 
-}
+
+
 
 .footer {
     height: 400px;
@@ -467,6 +462,19 @@ h3 {
 
     .hero-img {
         background-image: url(Images/Optim/NEON-SIGN-01.jpg);
+    }
+
+    .pancakes {
+        display: flex;
+        height: 600px;
+        background-image: url(Images/Optim/prateek-katyal-LtX2CBAJd20-unsplash.jpg);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        justify-content: center;
+        background-attachment: fixed;
+        align-items: center;
     }
 
 
