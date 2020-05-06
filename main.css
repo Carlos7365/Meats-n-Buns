@@ -64,7 +64,8 @@ h3 {
 }
 
 .browser-links a:hover {
-    color: var(--color);
+    color: #FDEEFC;
+    font-size: 30px;
 }
 
 .browser-links li {
@@ -306,8 +307,8 @@ h3 {
     }
 
     .nav-links a:hover {
-        color: #F250FB;
-        font-size: 25px;
+        color: #FDEEFC;
+        font-size: 35px;
     }
 
 
@@ -439,9 +440,7 @@ h3 {
 
 
 
-.footer {
-    height: 400px;
-}
+
 
 
 @media only screen and (min-width: 690px) {
@@ -617,7 +616,7 @@ h3 {
 @media only screen and (min-width: 690px) {
     .burgers-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(9, minmax(200px, 250px));
+        grid-template-rows: repeat(8, 220px);
         grid-template-areas:
             "burger1 ."
             "burger1 burger-info1"
@@ -641,6 +640,7 @@ h3 {
 
 footer {
     height: 40px;
+    margin-top: 100px;
 }
 
 footer p {
