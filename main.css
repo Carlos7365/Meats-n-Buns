@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 
 }
 
@@ -649,4 +649,145 @@ footer p {
     padding-top: 12px;
     padding-right: 20px;
     font-family: sans-serif;
+}
+
+/* Cocktail cards */
+
+.cocktails-hero {
+    width: 100%;
+}
+
+.cocktails-hero img {
+    width: 100%;
+
+}
+
+
+
+.cocktail-cards-grid ul {
+    width: 100%;
+    padding: 0;
+}
+
+.cocktail-cards-grid ol {
+    padding: 0 13px;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.cocktail-cards-grid li {
+    list-style: none;
+    letter-spacing: 0.1em;
+    font-size: .8em;
+}
+
+.cocktail-cards-grid h3 {
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    ;
+
+}
+
+.cocktail-cards-grid h1 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+.cocktail-cards-grid img {
+    width: 100%;
+    height: auto;
+}
+
+
+.cocktail-cards-grid {
+    margin: 150px 10%;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
+}
+
+/* The main container holds everything */
+.cards-maincontainer {
+    width: 190px;
+    height: 315px;
+    /* width: 250px;
+    height: 375px; */
+    background: none;
+}
+
+/* The card holds front and back */
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.3s linear;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #F250FB;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background: black;
+    color: #000;
+    box-sizing: border-box;
+
+}
+
+.name h4 {
+    margin: 0;
+    text-align: center;
+    color: #F250FB;
+    margin-top: 3%;
+    font-size: 1.7rem;
+    font-family: 'Josefin Slab', serif;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: black;
+    text-align: center;
+    transform: rotateY(180deg);
+    display: grid;
+    align-content: center;
+}
+
+.ingredients {
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2.3rem;
+}
+
+
+
+.method li {
+    text-align: center;
 }
