@@ -27,6 +27,10 @@ nav {
     z-index: 99;
 }
 
+img {
+    width: 100%;
+}
+
 h2 {
     font-size: 4rem;
     color: #F250FB;
@@ -701,17 +705,17 @@ footer p {
 
 
 .cocktail-cards-grid {
-    margin: 150px 10%;
+    margin: 10%;
     display: grid;
-    grid-gap: 6rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     place-items: center;
 }
 
 /* The main container holds everything */
 .cards-maincontainer {
-    width: 190px;
-    height: 315px;
+    width: 175px;
+    height: 263px;
     /* width: 250px;
     height: 375px; */
     background: none;
@@ -742,7 +746,7 @@ footer p {
     width: 100%;
     height: 100%;
     border: 3px solid #F250FB;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     backface-visibility: hidden;
     background: black;
     color: #000;
@@ -755,7 +759,7 @@ footer p {
     text-align: center;
     color: #F250FB;
     margin-top: 3%;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     font-family: 'Josefin Slab', serif;
 }
 
@@ -783,11 +787,109 @@ footer p {
     padding: 0;
     font-size: 1.2rem;
     color: white;
-    line-height: 2.3rem;
+    line-height: 1.8rem;
 }
 
 
 
 .method li {
     text-align: center;
+}
+
+/* Beers  */
+
+.drinks-beers {
+    width: 100%
+}
+
+.drinks-beers img {
+    width: 100%;
+}
+
+.beers-img-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    /* margin-bottom: 200px; */
+}
+
+.beers-img-info img {
+
+    /* max-width: 400px; */
+    grid-row: 1/ 9;
+    grid-column: 1/ 3;
+}
+
+.beer-info {
+    grid-row: 4/ span 2;
+    grid-column: 2/ span 3;
+
+    justify-self: center;
+    align-self: center;
+    /* background-color: #fdf200; */
+    height: 80px;
+
+}
+
+.beer-info p,
+.wine-info p {
+    color: black;
+    font-family: 'Courier Prime', monospace;
+    font-size: 3vw;
+    line-height: 1.7;
+}
+
+.beer-info p span,
+.wine-info p span {
+    display: inline;
+    padding: 0.5rem 0.25rem 0;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: #FFED00;
+}
+
+.wine-img-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.wine-img-info img {
+    grid-row: 1 / 9;
+    grid-column: 3/5;
+}
+
+.wine-info {
+    grid-row: 4 / 6;
+    grid-column: 1/4;
+
+    justify-self: center;
+    align-self: center;
+    /* background-color: #fdf200; */
+    height: 12px;
+}
+
+.wine-img {
+    width: 70%;
+}
+
+
+@media only screen and (max-width: 690px) {
+    .cards-maincontainer {
+        width: 120px;
+        height: 186px;
+    }
+
+    .cocktail-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+    }
+
+    .cocktail-cards-grid h4 {
+        font-size: 1rem;
+    }
+
+    .ingredients {
+        line-height: 1.2rem;
+    }
 }
