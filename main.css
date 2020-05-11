@@ -43,6 +43,13 @@ h3 {
     text-align: center;
 }
 
+.grid-container h2 {
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 2.5rem
+}
+
 .browser-nav {
     display: flex;
     justify-content: flex-end;
@@ -50,6 +57,7 @@ h3 {
     min-height: 8vh;
     background-color: var(--menu);
     width: 100%;
+    background-color: #000;
 }
 
 
@@ -57,14 +65,16 @@ h3 {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    height: 100%;
     list-style: none;
+    align-items: center;
 }
 
 .browser-links a {
     color: #F250FB;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .browser-links a:hover {
@@ -83,21 +93,8 @@ h3 {
 
 
 /* Hero img  */
-.hero {
-    height: 80vh;
-    display: grid;
-    background-color: #161423;
 
 
-}
-
-.hero-img {
-    background-image: url(Images/Optim/Hero3.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* height: 100%; */
-
-}
 
 .main-container {
     display: grid;
@@ -161,11 +158,11 @@ h3 {
 
 .parent:hover .child,
 .parent:focus .child {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     -o-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .parent:hover .child:before,
@@ -186,7 +183,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(52, 73, 94, 0.75);
+    background-color: rgba(245, 6, 237, 0.25);
 
 }
 
@@ -198,7 +195,8 @@ h3 {
 }
 
 .burger-img {
-    background-image: url(Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg);
+    /* background-image: url(Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg); */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg");
     background-position: center;
     height: 100%;
 
@@ -209,7 +207,7 @@ h3 {
 }
 
 .hotdogs-img {
-    background-image: url(Images/Optim/H-call-me-hangry-HP9vpVGq-WA-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/H-call-me-hangry-HP9vpVGq-WA-unsplash.jpg);
     background-position: center;
 
 
@@ -220,7 +218,7 @@ h3 {
 }
 
 .sides-img {
-    background-image: url(Images/Optim/S-ismael-trevino-Y0zbn9lPCEU-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/S-ismael-trevino-Y0zbn9lPCEU-unsplash.jpg);
     background-position: center;
     background-size: cover;
 
@@ -231,7 +229,7 @@ h3 {
 }
 
 .desserts-img {
-    background-image: url(Images/Optim/D-marc-markstein-nsFpg75ENAA-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/D-marc-markstein-nsFpg75ENAA-unsplash.jpg);
     background-position: center;
     background-size: cover;
 
@@ -242,7 +240,7 @@ h3 {
 }
 
 .beers-img {
-    background-image: url(Images/Optim/B-andrew-cleaton-qxFsVuBCDT0-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/B-andrew-cleaton-qxFsVuBCDT0-unsplash.jpg);
     background-position: center;
     background-size: cover;
 
@@ -253,7 +251,7 @@ h3 {
 }
 
 .wines-img {
-    background-image: url(Images/Optim/W-800-terry-vlisidis-0dhIwRsPV74-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/W-800-terry-vlisidis-0dhIwRsPV74-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -263,7 +261,7 @@ h3 {
 }
 
 .cocktails-img {
-    background-image: url(Images/Optim/C-ralph-darabos-swkwxyaBFto-unsplash.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/C-ralph-darabos-swkwxyaBFto-unsplash.jpg);
     background-position: center;
     background-size: cover;
 
@@ -450,7 +448,7 @@ h3 {
 @media only screen and (min-width: 690px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 400px);
+        grid-template-rows: repeat(5, 200px);
         grid-template-areas:
             "burger burger"
             "hotdogs sides"
@@ -463,9 +461,6 @@ h3 {
         margin-bottom: 120px;
     }
 
-    .hero-img {
-        background-image: url(Images/Optim/NEON-SIGN-01.jpg);
-    }
 
     .pancakes {
         display: flex;
@@ -487,7 +482,7 @@ h3 {
 @media only screen and (min-width: 1000px) {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 280px);
+        grid-template-rows: repeat(3, 190px);
         grid-template-areas:
             "burger burger hotdogs hotdogs"
             "burger burger sides desserts"
@@ -501,7 +496,11 @@ h3 {
     background-color: #191B1A;
 }
 
-.menu-hero {
+.menu-container img {
+    width: 185px;
+}
+
+/* .menu-hero {
     margin-top: 60px;
     height: 400px;
     width: 100%;
@@ -509,8 +508,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #191B1A;
-    /* background-size: cover; */
-}
+} */
 
 .burgers-grid h3 {
     font-size: 25px;
@@ -520,15 +518,21 @@ h3 {
     color: #F250FB;
 }
 
+.price {
+    margin-top: 20px;
+    text-align: right;
+}
+
 
 .menu-container {
     margin: 0 5%;
 }
 
 .burgers-grid p {
-    color: white;
+    color: #FDEEFC;
     font-family: sans-serif;
     letter-spacing: 0.1rem;
+    font-size: 15px;
 }
 
 .burgers-grid {
@@ -536,41 +540,99 @@ h3 {
     display: grid;
     width: 100%;
     grid-gap: 10px;
-    grid-template-rows: repeat(12, 200px);
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(19, 200px);
     grid-template-columns: 1fr;
     grid-template-areas:
-        "burger1"
+
+        "burger-title"
         "burger1"
         "burger-info1"
 
 
         "burger2"
-        "burger2"
         "burger-info2"
 
 
-        "burger3"
         "burger3"
         "burger-info3"
 
 
         "burger4"
-        "burger4"
         "burger-info4"
 
+        "hotdog-title"
+
+        "hotdog1"
+        "hotdog-info1"
+
+        "hotdog2"
+        "hotdog-info2"
+
+        "hotdog3"
+        "hotdog-info3"
+
+        "hotdog4"
+        "hotdog-info4"
+
+        "sides-title"
+
+        "side1"
+        "side-info1"
+
+        "side2"
+        "side-info2"
+
+        "side3"
+        "side-info3"
+
+        "side4"
+        "side-info4"
+
+        "desserts-title"
+        "dessert1"
+        "dessert-info1"
+        "dessert2"
+        "dessert-info2"
+        "dessert3"
+        "dessert-info3"
+        "dessert4"
+        "dessert-info4"
+
+
+
+    ;
+
 }
 
-.burger1 {
+.burgers-title {
+    grid-area: burger-title;
+    font-family: 'Josefin Slab', serif;
+    color: #FDEEFC;
+}
+
+.hotdog-title {
+    grid-area: hotdog-title;
+    font-family: 'Josefin Slab', serif;
+    color: #FDEEFC;
+}
+
+.sides-title {
+    grid-area: sides-title;
+    font-family: 'Josefin Slab', serif;
+    color: #FDEEFC;
+}
+
+.desserts-title {
+    grid-area: desserts-title;
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+}
+
+.burger1 img {
     grid-area: burger1;
-    background-image: url(Images/Optim/burger1.png);
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5%;
-    /* height: 80%; */
-
 }
-
 
 
 .burger-info1 {
@@ -579,11 +641,7 @@ h3 {
 
 .burger2 {
     grid-area: burger2;
-    background-image: url(Images/Optim/img-1.svg);
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5%;
+
 }
 
 .burger-info2 {
@@ -592,11 +650,7 @@ h3 {
 
 .burger3 {
     grid-area: burger3;
-    background-image: url(Images/Optim/img-2.svg);
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5%;
+
 }
 
 .burger-info3 {
@@ -605,46 +659,150 @@ h3 {
 
 .burger4 {
     grid-area: burger4;
-    background-image: url(Images/Optim/img.svg);
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5%;
+
 }
 
 .burger-info4 {
     grid-area: burger-info4;
 }
 
+.hotdog1 {
+    grid-area: hotdog1;
 
-@media only screen and (min-width: 690px) {
+}
+
+.hotdog-info1 {
+    grid-area: hotdog-info1;
+}
+
+.hotdog2 {
+    grid-area: hotdog2;
+
+}
+
+.hotdog-info2 {
+    grid-area: hotdog-info2;
+}
+
+.hotdog3 {
+    grid-area: hotdog3;
+
+}
+
+.hotdog-info3 {
+    grid-area: hotdog-info3;
+}
+
+.hotdog4 {
+    grid-area: hotdog4;
+
+}
+
+.hotdog-info4 {
+    grid-area: hotdog-info4;
+}
+
+.sides1 {
+    grid-area: side1;
+}
+
+.sides-info1 {
+    grid-area: side-info1;
+}
+
+.sides2 {
+    grid-area: side2;
+}
+
+.sides-info2 {
+    grid-area: side-info2;
+}
+
+.sides3 {
+    grid-area: side3;
+}
+
+.sides-info3 {
+    grid-area: side-info3;
+}
+
+.sides4 {
+    grid-area: side4;
+}
+
+.sides-info4 {
+    grid-area: side-info4;
+}
+
+.desserts1 {
+    grid-area: dessert1;
+}
+
+.desserts-info1 {
+    grid-area: dessert-info1;
+}
+
+.desserts2 {
+    grid-area: dessert2;
+}
+
+.desserts-info2 {
+    grid-area: dessert-info2;
+}
+
+.desserts3 {
+    grid-area: dessert3;
+}
+
+.desserts-info3 {
+    grid-area: dessert-info3;
+}
+
+.desserts4 {
+    grid-area: dessert4;
+}
+
+.desserts-info4 {
+    grid-area: dessert-info4;
+}
+
+
+@media only screen and (min-width: 768px) {
     .burgers-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 220px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(12, 300px);
         grid-template-areas:
-            "burger1 ."
-            "burger1 burger-info1"
-            /* ".       burger-info" */
-            "burger2 ."
-            "burger2 burger-info2"
-            /* ".       burger-info2" */
-            "burger3 ."
-            "burger3 burger-info3"
-            /* ".       burger-info3" */
-            "burger4 ."
-            "burger4 burger-info4"
-            /* ".       burger-info4" */
+            "burger-title burger-title burger-title burger-title"
+            "burger1 burger-info1 burger2 burger-info2"
+
+            "burger3 burger-info3 burger4 burger-info4"
+
+            "hotdog-title hotdog-title hotdog-title hotdog-title"
+
+            "hotdog1 hotdog-info1 hotdog2 hotdog-info2"
+
+            "hotdog3 hotdog-info3 hotdog4 hotdog-info4"
+
+            "sides-title sides-title sides-title sides-title"
+
+            "side1 side-info1 side2 side-info2"
+
+            "side3 side-info3 side4 side-info4"
+
+            "desserts-title desserts-title desserts-title desserts-title"
+
+            "dessert1 dessert-info1 dessert2 dessert-info2"
+
+            "dessert3 dessert-info3 dessert4 dessert-info4"
         ;
+
     }
 
-    .burgers-grid h3 {
-        margin-top: 70px;
-    }
 }
 
 footer {
     height: 40px;
-    margin-top: 100px;
+
 }
 
 footer p {
@@ -733,12 +891,17 @@ footer p {
     transition: all 0.3s linear;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
 .thecard:hover {
     transform: rotateY(180deg);
 }
 
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.image img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* Front of the card*/
 .thefront {
     position: absolute;
     top: 0;
@@ -746,7 +909,7 @@ footer p {
     width: 100%;
     height: 100%;
     border: 3px solid #F250FB;
-    /* border-radius: 5px; */
+    border-radius: 10px;
     backface-visibility: hidden;
     background: black;
     color: #000;
