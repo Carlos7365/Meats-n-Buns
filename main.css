@@ -542,54 +542,43 @@ h3 {
     grid-gap: 10px;
     align-items: center;
     justify-items: center;
-    grid-template-rows: repeat(19, 200px);
+    grid-template-rows: repeat(39, 200px);
     grid-template-columns: 1fr;
     grid-template-areas:
 
         "burger-title"
         "burger1"
         "burger-info1"
-
-
         "burger2"
         "burger-info2"
-
-
         "burger3"
         "burger-info3"
-
-
         "burger4"
         "burger-info4"
 
+        "hotdog-nav"
         "hotdog-title"
-
         "hotdog1"
         "hotdog-info1"
-
         "hotdog2"
         "hotdog-info2"
-
         "hotdog3"
         "hotdog-info3"
-
         "hotdog4"
         "hotdog-info4"
 
+        "sides-nav"
         "sides-title"
-
         "side1"
         "side-info1"
-
         "side2"
         "side-info2"
-
         "side3"
         "side-info3"
-
         "side4"
         "side-info4"
 
+        "desserts-nav"
         "desserts-title"
         "dessert1"
         "dessert-info1"
@@ -600,8 +589,6 @@ h3 {
         "dessert4"
         "dessert-info4"
 
-
-
     ;
 
 }
@@ -610,6 +597,10 @@ h3 {
     grid-area: burger-title;
     font-family: 'Josefin Slab', serif;
     color: #FDEEFC;
+}
+
+.hotdog-nav {
+    grid-area: hotdog-nav;
 }
 
 .hotdog-title {
@@ -624,10 +615,18 @@ h3 {
     color: #FDEEFC;
 }
 
+.sides-nav {
+    grid-area: sides-nav;
+}
+
 .desserts-title {
     grid-area: desserts-title;
     font-family: 'Josefin Slab', serif;
     color: #fff;
+}
+
+.desserts-nav {
+    grid-area: desserts-nav;
 }
 
 .burger1 img {
@@ -770,12 +769,14 @@ h3 {
 @media only screen and (min-width: 768px) {
     .burgers-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(12, 300px);
+        grid-template-rows: repeat(3, 300px) 30px repeat(3, 300px) 30px repeat(3, 300px) 30px repeat(3, 300px);
         grid-template-areas:
             "burger-title burger-title burger-title burger-title"
             "burger1 burger-info1 burger2 burger-info2"
 
             "burger3 burger-info3 burger4 burger-info4"
+
+            "hotdog-nav hotdog-nav hotdog-nav hotdog-nav"
 
             "hotdog-title hotdog-title hotdog-title hotdog-title"
 
@@ -783,11 +784,15 @@ h3 {
 
             "hotdog3 hotdog-info3 hotdog4 hotdog-info4"
 
+            "sides-nav sides-nav sides-nav sides-nav"
+
             "sides-title sides-title sides-title sides-title"
 
             "side1 side-info1 side2 side-info2"
 
             "side3 side-info3 side4 side-info4"
+
+            "desserts-nav desserts-nav desserts-nav desserts-nav"
 
             "desserts-title desserts-title desserts-title desserts-title"
 
