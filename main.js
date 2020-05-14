@@ -43,7 +43,7 @@ const parallax = document.getElementById
 
 window.addEventListener("scroll", function ()
 {
-    let offset = window.pageYOffset - 1400;
+    let offset = window.pageYOffset + 600;
     parallax.style.backgroundPositionY = offset * .1 + "px";
     // console.log('Offset: ' + offset);
     // console.log("offset * 0.7" + offset)
