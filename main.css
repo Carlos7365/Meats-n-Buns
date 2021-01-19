@@ -1,503 +1,465 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 html {
-    background-color: #161423;
+  background-color: #161423;
 }
 
 body {
-    display: grid;
-    font-family: 'Sacramento', cursive;
-
+  display: grid;
+  font-family: "Sacramento", cursive;
 }
 
 /* Nav */
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    position: fixed;
-    z-index: 99;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 99;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 h2 {
-    font-size: 4rem;
-    color: #F250FB;
+  font-size: 4rem;
+  color: #f250fb;
 }
 
 h3 {
-    font-family: 'Josefin Slab', serif;
-    font-size: 5rem;
-    color: #fff;
-    text-align: center;
+  font-family: "Josefin Slab", serif;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
 }
 
 .grid-container h2 {
-    font-family: 'Josefin Slab', serif;
-    color: #fff;
-    padding-left: 10px;
-    font-size: 2.5rem
+  font-family: "Josefin Slab", serif;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 2.5rem;
 }
 
 .browser-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 8vh;
-    background-color: var(--menu);
-    width: 100%;
-    background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 8vh;
+  background-color: var(--menu);
+  width: 100%;
+  background-color: #000;
 }
 
-
 .browser-links {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  align-items: center;
 }
 
 .browser-links a {
-    color: #F250FB;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 20px;
+  color: #f250fb;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 
 .browser-links a:hover {
-    color: #FDEEFC;
-    font-size: 30px;
+  color: #fdeefc;
+  font-size: 30px;
 }
 
 .browser-links li {
-    padding-right: 5%;
+  padding-right: 5%;
 }
 
 .nav-links {
-    display: none;
-
+  display: none;
 }
-
 
 /* Hero img  */
 
-
-
 .main-container {
-    display: grid;
+  display: grid;
 }
 
 .grid-container {
-    display: grid;
-    max-width: 100vw;
-    grid-gap: 15px;
-    margin: 0 5%;
-    grid-template-rows: repeat(7, 400px);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "burger"
-        "hotdogs"
-        "sides"
-        "desserts"
-        "beer"
-        "wines"
-        "cocktails";
+  display: grid;
+  max-width: 100vw;
+  grid-gap: 15px;
+  margin: 0 5%;
+  grid-template-rows: repeat(7, 400px);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "burger"
+    "hotdogs"
+    "sides"
+    "desserts"
+    "beer"
+    "wines"
+    "cocktails";
 }
 
 .grid-container a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .border {
-    border: 1px solid #000;
-    border-radius: 15px;
-    display: flex;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+  border: 1px solid #000;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 /* Hover on images */
 
 .parent {
-
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid #000;
-    border-radius: 15px;
-    /* grid-area: burger; */
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 15px;
+  /* grid-area: burger; */
 }
 
 .child {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-
 
 .parent:hover .child,
 .parent:focus .child {
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.2);
-    transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .parent:hover .child:before,
 .parent:focus .child:before {
-    display: block;
+  display: block;
 }
 
 .parent:hover a,
 .parent:focus a {
-    display: block;
+  display: block;
 }
 
 .child:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(245, 6, 237, 0.25);
-
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(245, 6, 237, 0.25);
 }
 
 /* Grid gallery */
 
 .burger {
-    grid-area: burger;
-
+  grid-area: burger;
 }
 
 .burger-img {
-    /* background-image: url(Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg); */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg");
-    background-position: center;
-    height: 100%;
-
+  /* background-image: url(Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg); */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("Images/Optim/Bu-oleg-ivanov-wfY_RbMcQ8g-unsplash.jpg");
+  background-position: center;
+  height: 100%;
 }
 
 .hotdogs {
-    grid-area: hotdogs;
+  grid-area: hotdogs;
 }
 
 .hotdogs-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/H-call-me-hangry-HP9vpVGq-WA-unsplash.jpg);
-    background-position: center;
-
-
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/H-call-me-hangry-HP9vpVGq-WA-unsplash.jpg);
+  background-position: center;
 }
 
 .sides {
-    grid-area: sides;
+  grid-area: sides;
 }
 
 .sides-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/S-ismael-trevino-Y0zbn9lPCEU-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/S-ismael-trevino-Y0zbn9lPCEU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .desserts {
-    grid-area: desserts;
+  grid-area: desserts;
 }
 
 .desserts-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/D-marc-markstein-nsFpg75ENAA-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/D-marc-markstein-nsFpg75ENAA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .beers {
-    grid-area: beer;
+  grid-area: beer;
 }
 
 .beers-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/B-andrew-cleaton-qxFsVuBCDT0-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/B-andrew-cleaton-qxFsVuBCDT0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .wines {
-    grid-area: wines;
+  grid-area: wines;
 }
 
 .wines-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/W-800-terry-vlisidis-0dhIwRsPV74-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/W-800-terry-vlisidis-0dhIwRsPV74-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .cocktails {
-    grid-area: cocktails;
+  grid-area: cocktails;
 }
 
 .cocktails-img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Optim/C-ralph-darabos-swkwxyaBFto-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Optim/C-ralph-darabos-swkwxyaBFto-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .pancakes {
-    display: none;
+  display: none;
 }
-
-
-
 
 @media only screen and (max-width: 691px) {
-    .browser-links {
-        display: none;
+  .browser-links {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.5s ease-in;
+    margin: 0;
+  }
+
+  .nav-links a {
+    color: #f250fb;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 22px;
+    transition: color 0.2s, font-size 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: #fdeefc;
+    font-size: 35px;
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  .burger-icon div {
+    width: 25px;
+    height: 2px;
+    background-color: #f250fb;
+    margin: 5px;
+    transition: all 0.35s ease;
+  }
+
+  .nav-links {
+    transform: translateX(100%);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
     }
 
-    .nav-links {
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        list-style: none;
-        position: fixed;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transition: transform 0.5s ease-in;
-        margin: 0;
-
-
-
+    to {
+      opacity: 1;
+      transform: translateX(0px);
     }
+  }
 
-    .nav-links a {
-        color: #F250FB;
-        text-decoration: none;
-        letter-spacing: 3px;
-        font-size: 22px;
-        transition: color 0.2s, font-size 0.2s;
-    }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-    .nav-links a:hover {
-        color: #FDEEFC;
-        font-size: 35px;
-    }
+  .toggle .line2 {
+    opacity: 0;
+  }
 
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
-    .burger-icon {
-        display: none;
-    }
+  .nav-links ul {
+    margin: 0;
+  }
 
-    .burger-icon div {
-        width: 25px;
-        height: 2px;
-        background-color: #F250FB;
-        margin: 5px;
-        transition: all 0.35s ease;
-    }
+  .nav-links li:nth-child(6) {
+    padding-bottom: 30%;
+  }
 
-    .nav-links {
-
-        transform: translateX(100%);
-    }
-
-
-
-    .nav-active {
-        transform: translateX(0%);
-    }
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line2 {
-        opacity: 0;
-    }
-
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .nav-links ul {
-        margin: 0;
-    }
-
-    .nav-links li:nth-child(6) {
-        padding-bottom: 30%;
-    }
-
-    .burger-icon {
-        display: block;
-        cursor: pointer;
-        margin-right: 40px
-    }
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 40px;
+  }
 }
 
-
-
 .offer {
-    height: 550px;
-    background-image: url(Images/Optim/walter-lee-olivares-de-la-cruz-cUFli52JBoo-unsplash.jpg);
+  height: 550px;
+  background-image: url(Images/Optim/walter-lee-olivares-de-la-cruz-cUFli52JBoo-unsplash.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: hsla(223, 6%, 58%, 0.75);
+  width: 75%;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  font-size: 30px;
+  color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box span {
+  color: #f250fb;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 60%;
+  height: 35px;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #000;
+  width: 31%;
+  max-width: 150px;
+  min-width: 90px;
+  height: 35px;
+  color: #f250fb;
+  font-size: 1.1rem;
+  /* margin-left: 30px; */
+  margin-top: 10px;
+  padding: 4px;
+}
+
+@media only screen and (min-width: 690px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "burger burger"
+      "hotdogs sides"
+      "desserts desserts"
+      "beer wines"
+      "cocktails cocktails";
+  }
+
+  .hero {
+    margin-bottom: 120px;
+  }
+
+  .pancakes {
+    display: flex;
+    height: 600px;
+    background-image: url(Images/Optim/prateek-katyal-LtX2CBAJd20-unsplash.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 20px;
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
+    background-attachment: fixed;
     align-items: center;
+  }
 }
-
-.box {
-    background-color: hsla(223, 6%, 58%, 0.75);
-    width: 75%;
-    text-align: center;
-    font-family: 'Josefin Slab', serif;
-    font-size: 1.6rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-.box span {
-    color: #F250FB;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#email {
-    width: 60%;
-    height: 35px;
-    border-radius: 8px;
-    padding: 5px;
-    margin-top: 20px;
-
-}
-
-.submit-button {
-    background-color: #000;
-    width: 31%;
-    max-width: 150px;
-    min-width: 90px;
-    height: 35px;
-    color: #F250FB;
-    font-size: 1.1rem;
-    /* margin-left: 30px; */
-    margin-top: 10px;
-    padding: 4px;
-
-}
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 690px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 200px);
-        grid-template-areas:
-            "burger burger"
-            "hotdogs sides"
-            "desserts desserts"
-            "beer wines"
-            "cocktails cocktails";
-    }
-
-    .hero {
-        margin-bottom: 120px;
-    }
-
-
-    .pancakes {
-        display: flex;
-        height: 600px;
-        background-image: url(Images/Optim/prateek-katyal-LtX2CBAJd20-unsplash.jpg);
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: 20px;
-        justify-content: center;
-        background-attachment: fixed;
-        align-items: center;
-    }
-
-
-}
-
 
 @media only screen and (min-width: 1000px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 190px);
-        grid-template-areas:
-            "burger burger hotdogs hotdogs"
-            "burger burger sides desserts"
-            "beer wines cocktails cocktails";
-    }
-
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 190px);
+    grid-template-areas:
+      "burger burger hotdogs hotdogs"
+      "burger burger sides desserts"
+      "beer wines cocktails cocktails";
+  }
 }
 
 /* Menu page styling */
 .menu {
-    background-color: #191B1A;
+  background-color: #191b1a;
 }
 
 .menu-container img {
-    width: 185px;
+  width: 185px;
 }
 
 /* .menu-hero {
@@ -511,553 +473,511 @@ h3 {
 } */
 
 .burgers-grid h3 {
-    font-size: 25px;
-    font-family: 'Josefin Slab', serif;
-    text-align: left;
-    padding-bottom: 15px;
-    color: #F250FB;
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+  text-align: left;
+  padding-bottom: 15px;
+  color: #f250fb;
 }
 
 .price {
-    margin-top: 20px;
-    text-align: right;
+  margin-top: 20px;
+  text-align: right;
 }
 
-
 .menu-container {
-    margin: 0 5%;
+  margin: 0 5%;
 }
 
 .burgers-grid p {
-    color: #FDEEFC;
-    font-family: sans-serif;
-    letter-spacing: 0.1rem;
-    font-size: 15px;
+  color: #fdeefc;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
 }
 
 .burgers-grid {
-    text-align: left;
-    display: grid;
-    width: 100%;
-    grid-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-rows: repeat(39, 200px);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-
-        "burger-title"
-        "burger1"
-        "burger-info1"
-        "burger2"
-        "burger-info2"
-        "burger3"
-        "burger-info3"
-        "burger4"
-        "burger-info4"
-
-        "hotdog-nav"
-        "hotdog-title"
-        "hotdog1"
-        "hotdog-info1"
-        "hotdog2"
-        "hotdog-info2"
-        "hotdog3"
-        "hotdog-info3"
-        "hotdog4"
-        "hotdog-info4"
-
-        "sides-nav"
-        "sides-title"
-        "side1"
-        "side-info1"
-        "side2"
-        "side-info2"
-        "side3"
-        "side-info3"
-        "side4"
-        "side-info4"
-
-        "desserts-nav"
-        "desserts-title"
-        "dessert1"
-        "dessert-info1"
-        "dessert2"
-        "dessert-info2"
-        "dessert3"
-        "dessert-info3"
-        "dessert4"
-        "dessert-info4"
-
-    ;
-
+  text-align: left;
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: repeat(39, 200px);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "burger-title"
+    "burger1"
+    "burger-info1"
+    "burger2"
+    "burger-info2"
+    "burger3"
+    "burger-info3"
+    "burger4"
+    "burger-info4"
+    "hotdog-nav"
+    "hotdog-title"
+    "hotdog1"
+    "hotdog-info1"
+    "hotdog2"
+    "hotdog-info2"
+    "hotdog3"
+    "hotdog-info3"
+    "hotdog4"
+    "hotdog-info4"
+    "sides-nav"
+    "sides-title"
+    "side1"
+    "side-info1"
+    "side2"
+    "side-info2"
+    "side3"
+    "side-info3"
+    "side4"
+    "side-info4"
+    "desserts-nav"
+    "desserts-title"
+    "dessert1"
+    "dessert-info1"
+    "dessert2"
+    "dessert-info2"
+    "dessert3"
+    "dessert-info3"
+    "dessert4"
+    "dessert-info4";
 }
 
 .burgers-title {
-    grid-area: burger-title;
-    font-family: 'Josefin Slab', serif;
-    color: #FDEEFC;
+  grid-area: burger-title;
+  font-family: "Josefin Slab", serif;
+  color: #fdeefc;
 }
 
 .hotdog-nav {
-    grid-area: hotdog-nav;
+  grid-area: hotdog-nav;
 }
 
 .hotdog-title {
-    grid-area: hotdog-title;
-    font-family: 'Josefin Slab', serif;
-    color: #FDEEFC;
+  grid-area: hotdog-title;
+  font-family: "Josefin Slab", serif;
+  color: #fdeefc;
 }
 
 .sides-title {
-    grid-area: sides-title;
-    font-family: 'Josefin Slab', serif;
-    color: #FDEEFC;
+  grid-area: sides-title;
+  font-family: "Josefin Slab", serif;
+  color: #fdeefc;
 }
 
 .sides-nav {
-    grid-area: sides-nav;
+  grid-area: sides-nav;
 }
 
 .desserts-title {
-    grid-area: desserts-title;
-    font-family: 'Josefin Slab', serif;
-    color: #fff;
+  grid-area: desserts-title;
+  font-family: "Josefin Slab", serif;
+  color: #fff;
 }
 
 .desserts-nav {
-    grid-area: desserts-nav;
+  grid-area: desserts-nav;
 }
 
 .burger1 img {
-    grid-area: burger1;
+  grid-area: burger1;
 }
 
-
 .burger-info1 {
-    grid-area: burger-info1;
+  grid-area: burger-info1;
 }
 
 .burger2 {
-    grid-area: burger2;
-
+  grid-area: burger2;
 }
 
 .burger-info2 {
-    grid-area: burger-info2;
+  grid-area: burger-info2;
 }
 
 .burger3 {
-    grid-area: burger3;
-
+  grid-area: burger3;
 }
 
 .burger-info3 {
-    grid-area: burger-info3;
+  grid-area: burger-info3;
 }
 
 .burger4 {
-    grid-area: burger4;
-
+  grid-area: burger4;
 }
 
 .burger-info4 {
-    grid-area: burger-info4;
+  grid-area: burger-info4;
 }
 
 .hotdog1 {
-    grid-area: hotdog1;
-
+  grid-area: hotdog1;
 }
 
 .hotdog-info1 {
-    grid-area: hotdog-info1;
+  grid-area: hotdog-info1;
 }
 
 .hotdog2 {
-    grid-area: hotdog2;
-
+  grid-area: hotdog2;
 }
 
 .hotdog-info2 {
-    grid-area: hotdog-info2;
+  grid-area: hotdog-info2;
 }
 
 .hotdog3 {
-    grid-area: hotdog3;
-
+  grid-area: hotdog3;
 }
 
 .hotdog-info3 {
-    grid-area: hotdog-info3;
+  grid-area: hotdog-info3;
 }
 
 .hotdog4 {
-    grid-area: hotdog4;
-
+  grid-area: hotdog4;
 }
 
 .hotdog-info4 {
-    grid-area: hotdog-info4;
+  grid-area: hotdog-info4;
 }
 
 .sides1 {
-    grid-area: side1;
+  grid-area: side1;
 }
 
 .sides-info1 {
-    grid-area: side-info1;
+  grid-area: side-info1;
 }
 
 .sides2 {
-    grid-area: side2;
+  grid-area: side2;
 }
 
 .sides-info2 {
-    grid-area: side-info2;
+  grid-area: side-info2;
 }
 
 .sides3 {
-    grid-area: side3;
+  grid-area: side3;
 }
 
 .sides-info3 {
-    grid-area: side-info3;
+  grid-area: side-info3;
 }
 
 .sides4 {
-    grid-area: side4;
+  grid-area: side4;
 }
 
 .sides-info4 {
-    grid-area: side-info4;
+  grid-area: side-info4;
 }
 
 .desserts1 {
-    grid-area: dessert1;
+  grid-area: dessert1;
 }
 
 .desserts-info1 {
-    grid-area: dessert-info1;
+  grid-area: dessert-info1;
 }
 
 .desserts2 {
-    grid-area: dessert2;
+  grid-area: dessert2;
 }
 
 .desserts-info2 {
-    grid-area: dessert-info2;
+  grid-area: dessert-info2;
 }
 
 .desserts3 {
-    grid-area: dessert3;
+  grid-area: dessert3;
 }
 
 .desserts-info3 {
-    grid-area: dessert-info3;
+  grid-area: dessert-info3;
 }
 
 .desserts4 {
-    grid-area: dessert4;
+  grid-area: dessert4;
 }
 
 .desserts-info4 {
-    grid-area: dessert-info4;
+  grid-area: dessert-info4;
 }
 
-
 @media only screen and (min-width: 768px) {
-    .burgers-grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 300px) 30px repeat(3, 300px) 30px repeat(3, 300px) 30px repeat(3, 300px);
-        grid-template-areas:
-            "burger-title burger-title burger-title burger-title"
-            "burger1 burger-info1 burger2 burger-info2"
-
-            "burger3 burger-info3 burger4 burger-info4"
-
-            "hotdog-nav hotdog-nav hotdog-nav hotdog-nav"
-
-            "hotdog-title hotdog-title hotdog-title hotdog-title"
-
-            "hotdog1 hotdog-info1 hotdog2 hotdog-info2"
-
-            "hotdog3 hotdog-info3 hotdog4 hotdog-info4"
-
-            "sides-nav sides-nav sides-nav sides-nav"
-
-            "sides-title sides-title sides-title sides-title"
-
-            "side1 side-info1 side2 side-info2"
-
-            "side3 side-info3 side4 side-info4"
-
-            "desserts-nav desserts-nav desserts-nav desserts-nav"
-
-            "desserts-title desserts-title desserts-title desserts-title"
-
-            "dessert1 dessert-info1 dessert2 dessert-info2"
-
-            "dessert3 dessert-info3 dessert4 dessert-info4"
-        ;
-
-    }
-
+  .burgers-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:
+      repeat(3, 300px) 30px repeat(3, 300px) 30px repeat(3, 300px)
+      30px repeat(3, 300px);
+    grid-template-areas:
+      "burger-title burger-title burger-title burger-title"
+      "burger1 burger-info1 burger2 burger-info2"
+      "burger3 burger-info3 burger4 burger-info4"
+      "hotdog-nav hotdog-nav hotdog-nav hotdog-nav"
+      "hotdog-title hotdog-title hotdog-title hotdog-title"
+      "hotdog1 hotdog-info1 hotdog2 hotdog-info2"
+      "hotdog3 hotdog-info3 hotdog4 hotdog-info4"
+      "sides-nav sides-nav sides-nav sides-nav"
+      "sides-title sides-title sides-title sides-title"
+      "side1 side-info1 side2 side-info2"
+      "side3 side-info3 side4 side-info4"
+      "desserts-nav desserts-nav desserts-nav desserts-nav"
+      "desserts-title desserts-title desserts-title desserts-title"
+      "dessert1 dessert-info1 dessert2 dessert-info2"
+      "dessert3 dessert-info3 dessert4 dessert-info4";
+  }
 }
 
 footer {
-    height: 40px;
-
+  height: 40px;
 }
 
 footer p {
-    color: white;
-    text-align: right;
-    padding-top: 12px;
-    padding-right: 20px;
-    font-family: sans-serif;
+  color: white;
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 20px;
+  font-family: sans-serif;
 }
 
 /* Cocktail cards */
 
 .cocktails-hero {
-    width: 100%;
+  width: 100%;
 }
 
 .cocktails-hero img {
-    width: 100%;
-
+  width: 100%;
 }
 
-
-
 .cocktail-cards-grid ul {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .cocktail-cards-grid ol {
-    padding: 0 13px;
-    margin-top: 1%;
-    margin-bottom: 0;
+  padding: 0 13px;
+  margin-top: 1%;
+  margin-bottom: 0;
 }
 
 .cocktail-cards-grid li {
-    list-style: none;
-    letter-spacing: 0.1em;
-    font-size: .8em;
+  list-style: none;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
 }
 
 .cocktail-cards-grid h3 {
-    text-decoration: underline;
-    margin-top: 10px;
-    margin-bottom: 7px;
-    ;
-
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 
 .cocktail-cards-grid h1 {
-    font-size: 8vw;
-    text-align: center;
+  font-size: 8vw;
+  text-align: center;
 }
 
 .cocktail-cards-grid img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-
 .cocktail-cards-grid {
-    margin: 10%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    place-items: center;
+  margin: 10%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-items: center;
 }
 
 /* The main container holds everything */
 .cards-maincontainer {
-    width: 175px;
-    height: 263px;
-    /* width: 250px;
+  width: 175px;
+  height: 263px;
+  /* width: 250px;
     height: 375px; */
-    background: none;
+  background: none;
 }
 
 /* The card holds front and back */
 .thecard {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transform-style: preserve-3d;
-    transition: all 0.3s linear;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
 }
 
-
 .thecard:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .image img {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 /* Front of the card*/
 .thefront {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #F250FB;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    background: black;
-    color: #000;
-    box-sizing: border-box;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #f250fb;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: black;
+  color: #000;
+  box-sizing: border-box;
 }
 
 .name h4 {
-    margin: 0;
-    text-align: center;
-    color: #F250FB;
-    margin-top: 3%;
-    font-size: 1.1rem;
-    font-family: 'Josefin Slab', serif;
+  margin: 0;
+  text-align: center;
+  color: #f250fb;
+  margin-top: 3%;
+  font-size: 1.1rem;
+  font-family: "Josefin Slab", serif;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback {
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid white;
-    border-radius: 5px;
-    backface-visibility: hidden;
-    overflow: hidden;
-    background: black;
-    text-align: center;
-    transform: rotateY(180deg);
-    display: grid;
-    align-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: black;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: grid;
+  align-content: center;
 }
 
 .ingredients {
-    width: 100%;
-    padding: 0;
-    font-size: 1.2rem;
-    color: white;
-    line-height: 1.8rem;
+  width: 100%;
+  padding: 0;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.8rem;
 }
 
-
-
 .method li {
-    text-align: center;
+  text-align: center;
 }
 
 /* Beers  */
 
 .drinks-beers {
-    width: 100%
+  width: 100%;
 }
 
 .drinks-beers img {
-    width: 100%;
+  width: 100%;
 }
 
 .beers-img-info {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    /* margin-bottom: 200px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* margin-bottom: 200px; */
 }
 
 .beers-img-info img {
-
-    /* max-width: 400px; */
-    grid-row: 1/ 9;
-    grid-column: 1/ 3;
+  /* max-width: 400px; */
+  grid-row: 1/ 9;
+  grid-column: 1/ 3;
 }
 
 .beer-info {
-    grid-row: 4/ span 2;
-    grid-column: 2/ span 3;
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 3;
 
-    justify-self: center;
-    align-self: center;
-    /* background-color: #fdf200; */
-    height: 80px;
-
+  justify-self: center;
+  align-self: center;
+  /* background-color: #fdf200; */
+  height: 80px;
 }
 
 .beer-info p,
 .wine-info p {
-    color: black;
-    font-family: 'Courier Prime', monospace;
-    font-size: 3vw;
-    line-height: 1.7;
+  color: black;
+  font-family: "Courier Prime", monospace;
+  font-size: 3vw;
+  line-height: 1.7;
 }
 
 .beer-info p span,
 .wine-info p span {
-    display: inline;
-    padding: 0.5rem 0.25rem 0;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background: #FFED00;
+  display: inline;
+  padding: 0.5rem 0.25rem 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background: #ffed00;
 }
 
 .wine-img-info {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    /* grid-template-columns: repeat(2, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .wine-img-info img {
-    grid-row: 1 / 9;
-    grid-column: 3/5;
+  grid-row: 1 / 9;
+  grid-column: 3/5;
 }
 
 .wine-info {
-    grid-row: 4 / 6;
-    grid-column: 1/4;
+  grid-row: 4 / 6;
+  grid-column: 1/4;
 
-    justify-self: center;
-    align-self: center;
-    /* background-color: #fdf200; */
-    height: 12px;
+  justify-self: center;
+  align-self: center;
+  /* background-color: #fdf200; */
+  height: 12px;
 }
 
 .wine-img {
-    width: 70%;
+  width: 70%;
 }
 
-
 @media only screen and (max-width: 690px) {
-    .cards-maincontainer {
-        width: 120px;
-        height: 186px;
-    }
+  .cards-maincontainer {
+    width: 120px;
+    height: 186px;
+  }
 
-    .cocktail-cards-grid {
-        grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
-    }
+  .cocktail-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+  }
 
-    .cocktail-cards-grid h4 {
-        font-size: 1rem;
-    }
+  .cocktail-cards-grid h4 {
+    font-size: 1rem;
+  }
 
-    .ingredients {
-        line-height: 1.2rem;
-    }
+  .ingredients {
+    line-height: 1.2rem;
+  }
+}
+.space {
+  height: 200px;
 }
